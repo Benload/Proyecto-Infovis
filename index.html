@@ -2,10 +2,34 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Infovis</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristiano Ronaldo Goals Visualization</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/15.1.3/Tone.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script scr main.js></script>
+    <script src="https://cdn.jsdelivr.net/npm/tone@latest/build/Tone.js"></script>
 </head>
+
+<body>
+    <div class="container">
+        <div class="club-stats">
+            <h3>Club Goals</h3>
+            <ul id="clubGoals"></ul>
+        </div>
+        <div class="year-stats">
+            <h3>Goals by Year</h3>
+            <ul id="yearGoals"></ul>
+        </div>
+        <div class="player-image">
+            <img src="imagenes/cristiano-ronaldo-hd.png" alt="Cristiano Ronaldo">
+        </div>
+        <div class="total-goals" id="totalGoals"></div>
+        <div class="goal-types">
+            <h3>Goal Types</h3>
+            <ul id="goalTypes"></ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
