@@ -65,7 +65,7 @@ function App() {
 
       >
         <Typography variant="h2" align="center" gutterBottom>
-          Cristiano Ronaldo: 700 Goles
+          Cristiano Ronaldo: 700 Goles por Club hasta 2023
         </Typography>
         <Grid container spacing={4} sx={{ flexGrow: 1 }}>
           <Grid item xs={12} md={6}>
