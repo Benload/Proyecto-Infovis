@@ -3,9 +3,9 @@ import { Box, Typography, Grid, Avatar } from '@mui/material';
 
 const clubLogos = {
   "Real Madrid": "https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg",
-  "Juventus FC": "https://upload.wikimedia.org/wikipedia/commons/1/15/Juventus_FC_2017_logo.svg",
-  "Al-Nassr FC": "https://upload.wikimedia.org/wikipedia/en/a/a0/Al_Nassr_FC.svg",
-  "Sporting CP": "https://upload.wikimedia.org/wikipedia/en/2/2d/Sporting_CP.svg",
+  "Juventus FC": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Juventus_FC_-_pictogram_black_%28Italy%2C_2017%29.svg",
+  "Al-Nassr FC": "https://upload.wikimedia.org/wikipedia/en/a/ac/Al_Nassr_FC_Logo.svg",
+  "Sporting CP": "https://upload.wikimedia.org/wikipedia/en/e/e1/Sporting_Clube_de_Portugal_%28Logo%29.svg",
   "Manchester United": "https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg"
 };
 
@@ -17,13 +17,32 @@ const ClubGoals = ({ data }) => {
       </Typography>
       <Grid container spacing={2}>
         {Object.entries(data).map(([club, goals]) => (
-          <Grid item xs={6} key={club}>
+          <Grid item xs={12} sm={6} key={club}>
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
-              <Avatar src={clubLogos[club]} alt={club} sx={{ width: 70, height: 70, marginRight: 2 }} />
-              <Box>
-                <Typography variant="body1">{club}</Typography>
-                <Typography variant="h6" color="primary">{goals}</Typography>
+              <Box
+                sx={{
+                  width: 50,
+                  height: 50,
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  overflow: 'hidden',
+                }}
+              >
+                <img
+                  src={clubLogos[club]}
+                  alt={club}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'contain',
+                    backgroundColor: 'transparent',
+                  }}
+                />
               </Box>
+              <Typography variant="h6" sx={{ marginLeft: 2 }}>
+                {club}: {goals} goles
+              </Typography>
             </Box>
           </Grid>
         ))}
