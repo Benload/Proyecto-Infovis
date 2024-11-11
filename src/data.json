@@ -1,0 +1,56 @@
+{
+  "anos": {
+    "2005": 5,
+    "2006": 6,
+    "2007": 13,
+    "2008": 19,
+    "2009": 29,
+    "2010": 34,
+    "2011": 45,
+    "2012": 53,
+    "2013": 58,
+    "2014": 59,
+    "2015": 56,
+    "2016": 54,
+    "2017": 42,
+    "2018": 42,
+    "2019": 43,
+    "2020": 25,
+    "2021": 34,
+    "2022": 41,
+    "2023": 13
+  },
+  "clubes": {
+    "Real Madrid": 450,
+    "Manchester United": 145,
+    "Juventus FC": 101,
+    "Al-Nassr FC": 9,
+    "Sporting CP": 5
+  },
+  "tipos_goles": {
+    "penales": 132,
+    "cabeza": 112,
+    "pie_derecho": 253,
+    "pie_izquierdo": 113,
+    "tiros_libres": 58,
+    "in_game": 520
+  },
+  "ligas": {
+    "LaLiga": 311,
+    "UEFA Champions League": 140,
+    "Premier League": 103,
+    "Serie A": 81,
+    "Copa del Rey": 22,
+    "FA Cup": 13,
+    "Saudi Pro League": 9,
+    "FIFA Club World Cup": 7,
+    "Italy Cup": 4,
+    "EFL Cup": 4,
+    "Supercopa": 4,
+    "UEFA Super Cup": 2,
+    "Supercoppa Italiana": 2,
+    "Europa League": 2,
+    "Liga Portugal": 3,
+    "Taca de Portugal Placard": 2
+  }
+}
